@@ -1,0 +1,151 @@
+{:log
+ [{:path [],
+   :lib org.clojure/clojure,
+   :coord {:mvn/version "1.10.1"},
+   :use-coord {:mvn/version "1.10.1"},
+   :coord-id {:mvn/version "1.10.1"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [],
+   :lib vvvvalvalval/scope-capture,
+   :coord {:mvn/version "0.3.2"},
+   :use-coord {:mvn/version "0.3.2"},
+   :coord-id {:mvn/version "0.3.2"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [],
+   :lib com.cognitect/transcriptor,
+   :coord {:mvn/version "0.1.5"},
+   :use-coord {:mvn/version "0.1.5"},
+   :coord-id {:mvn/version "0.1.5"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [],
+   :lib com.launchdarkly/launchdarkly-java-server-sdk,
+   :coord {:mvn/version "4.13.0"},
+   :use-coord {:mvn/version "4.13.0"},
+   :coord-id {:mvn/version "4.13.0"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [],
+   :lib org.slf4j/slf4j-simple,
+   :coord {:mvn/version "1.7.30"},
+   :use-coord {:mvn/version "1.7.30"},
+   :coord-id {:mvn/version "1.7.30"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [],
+   :lib com.google.code.gson/gson,
+   :coord {:mvn/version "2.7"},
+   :use-coord {:mvn/version "2.7"},
+   :coord-id {:mvn/version "2.7"},
+   :include true,
+   :reason :new-top-dep}
+  {:path [org.clojure/clojure],
+   :lib org.clojure/spec.alpha,
+   :coord {:mvn/version "0.2.176"},
+   :use-coord {:mvn/version "0.2.176"},
+   :coord-id {:mvn/version "0.2.176"},
+   :include true,
+   :reason :new-dep}
+  {:path [org.clojure/clojure],
+   :lib org.clojure/core.specs.alpha,
+   :coord {:mvn/version "0.2.44"},
+   :use-coord {:mvn/version "0.2.44"},
+   :coord-id {:mvn/version "0.2.44"},
+   :include true,
+   :reason :new-dep}
+  {:path [vvvvalvalval/scope-capture],
+   :lib org.clojure/clojure,
+   :coord {:mvn/version "1.8.0"},
+   :use-coord {:mvn/version "1.8.0"},
+   :coord-id {:mvn/version "1.8.0"},
+   :include false,
+   :reason :use-top}
+  {:path [com.launchdarkly/launchdarkly-java-server-sdk],
+   :lib com.google.code.gson/gson,
+   :coord {:mvn/version "2.7"},
+   :use-coord {:mvn/version "2.7"},
+   :coord-id {:mvn/version "2.7"},
+   :include false,
+   :reason :use-top}
+  {:path [com.launchdarkly/launchdarkly-java-server-sdk],
+   :lib org.slf4j/slf4j-api,
+   :coord {:mvn/version "1.7.21"},
+   :use-coord {:mvn/version "1.7.21"},
+   :coord-id {:mvn/version "1.7.21"},
+   :include true,
+   :reason :new-dep}
+  {:path [org.slf4j/slf4j-simple],
+   :lib org.slf4j/slf4j-api,
+   :coord {:mvn/version "1.7.30"},
+   :use-coord {:mvn/version "1.7.30"},
+   :coord-id {:mvn/version "1.7.30"},
+   :include true,
+   :reason :newer-version}],
+ :vmap
+ {org.clojure/clojure
+  {:versions
+   {{:mvn/version "1.10.1"}
+    {:mvn/version "1.10.1", :deps/manifest :mvn}},
+   :paths {{:mvn/version "1.10.1"} #{[]}},
+   :select {:mvn/version "1.10.1"},
+   :top true},
+  org.clojure/core.specs.alpha
+  {:versions
+   {{:mvn/version "0.2.44"}
+    {:mvn/version "0.2.44", :deps/manifest :mvn}},
+   :paths {{:mvn/version "0.2.44"} #{[org.clojure/clojure]}},
+   :select {:mvn/version "0.2.44"}},
+  org.clojure/spec.alpha
+  {:versions
+   {{:mvn/version "0.2.176"}
+    {:mvn/version "0.2.176", :deps/manifest :mvn}},
+   :paths {{:mvn/version "0.2.176"} #{[org.clojure/clojure]}},
+   :select {:mvn/version "0.2.176"}},
+  org.slf4j/slf4j-simple
+  {:versions
+   {{:mvn/version "1.7.30"}
+    {:mvn/version "1.7.30", :deps/manifest :mvn}},
+   :paths {{:mvn/version "1.7.30"} #{[]}},
+   :select {:mvn/version "1.7.30"},
+   :top true},
+  com.launchdarkly/launchdarkly-java-server-sdk
+  {:versions
+   {{:mvn/version "4.13.0"}
+    {:mvn/version "4.13.0", :deps/manifest :mvn}},
+   :paths {{:mvn/version "4.13.0"} #{[]}},
+   :select {:mvn/version "4.13.0"},
+   :top true},
+  com.cognitect/transcriptor
+  {:versions
+   {{:mvn/version "0.1.5"}
+    {:mvn/version "0.1.5", :deps/manifest :mvn}},
+   :paths {{:mvn/version "0.1.5"} #{[]}},
+   :select {:mvn/version "0.1.5"},
+   :top true},
+  org.slf4j/slf4j-api
+  {:versions
+   {{:mvn/version "1.7.21"}
+    {:mvn/version "1.7.21", :deps/manifest :mvn},
+    {:mvn/version "1.7.30"}
+    {:mvn/version "1.7.30", :deps/manifest :mvn}},
+   :paths
+   {{:mvn/version "1.7.30"} #{[org.slf4j/slf4j-simple]},
+    {:mvn/version "1.7.21"}
+    #{[com.launchdarkly/launchdarkly-java-server-sdk]}},
+   :select {:mvn/version "1.7.30"}},
+  vvvvalvalval/scope-capture
+  {:versions
+   {{:mvn/version "0.3.2"}
+    {:mvn/version "0.3.2", :deps/manifest :mvn}},
+   :paths {{:mvn/version "0.3.2"} #{[]}},
+   :select {:mvn/version "0.3.2"},
+   :top true},
+  com.google.code.gson/gson
+  {:versions
+   {{:mvn/version "2.7"} {:mvn/version "2.7", :deps/manifest :mvn}},
+   :paths {{:mvn/version "2.7"} #{[]}},
+   :select {:mvn/version "2.7"},
+   :top true}},
+ :exclusions nil}
